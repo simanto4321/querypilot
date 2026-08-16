@@ -1,0 +1,12 @@
+# Verified on CPython 3.14 (wheels available). Also resolves on 3.11-3.13.
+fastapi==0.141.1
+uvicorn[standard]==0.52.3
+SQLAlchemy==2.0.52
+pydantic==2.13.4
+pydantic-settings==2.15.0
+sqlglot==26.6.0
+httpx==0.28.1
+pytest==9.1.1
+# Optional PostgreSQL driver for the docker-compose warehouse path.
+psycopg[binary]==3.2.13 ; python_version >= "3.13"
+psycopg2-binary==2.9.10 ; python_version < "3.13"
